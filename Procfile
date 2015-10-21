@@ -1,0 +1,1 @@
+web: gunicorn midterm_exam.wsgi --log-file -
