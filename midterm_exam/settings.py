@@ -28,7 +28,7 @@ SECRET_KEY = '^x(&spjgc6*v5p$bl0c@ny*-_c)98uvd9_2e-htnh0(xn60w^f'
 if ON_HEROKU == True:
   DEBUG = False
 else:
-  Debug = True
+  DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -79,7 +79,6 @@ WSGI_APPLICATION = 'midterm_exam.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
 if ON_HEROKU == False:
     DATABASES = {
         'default': {
@@ -113,4 +112,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(MAIN_DIR, 'static'),)
-STATIC_ROOT = 'statocfiles'
+STATIC_ROOT = 'staticfiles'
